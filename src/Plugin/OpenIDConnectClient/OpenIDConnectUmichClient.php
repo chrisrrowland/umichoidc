@@ -97,3 +97,13 @@ class OpenIDConnectUmichClient extends OpenIDConnectClientBase {
   }
 
 }
+
+/**
+ * {@inheritdoc}
+ */
+public function defaultConfiguration() {
+  return [
+    'roles' => [],
+    'testshib' => 0,
+  ] + parent::defaultConfiguration();
+}
